@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
-    
+
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -35,56 +35,63 @@
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="navbar-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About Us</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Sites</a></li>
-                    <li class="navbar-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
+        <div class="row">
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+                <h2>Contact Us</h2>
+                <hr />
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+            <div class="col-sm-4">
+                <h5>Our Address</h5>
+                <address>
+                    1 Nucamp Way<br />
+                    Seattle, WA 98001<br />
+                    U.S.A.
+                </address>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+				<i class="fa fa-phone"></i> 1-206-555-1234<br>
+            	<i class="fa fa-envelope-o"></i> campsites@nucamp.co
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3" class="text-sm-right">
-                <h2>Our Community Partners</h2>
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Send us your Feedback</h2>
+                <hr />
             </div>
-            <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+            <div class="col-md-10">
+                Form goes here
             </div>
-        </div>
+       </div>
+
     </div>
+
     <footer>
         <div class="container">
-            <div class="row row-content">
+            <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Sites</a></li>
                         <li><a href="#">Contact</a></li>
@@ -92,16 +99,16 @@
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="http://instagram.com/"><span class="fa fa-instagram fa-lg"></span></a>
-                    <a href="http://facebook.com/"><span class="fa fa-facebook fa-lg"></span></a>
-                    <a href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a>
-                    <a href="http://youtube.com/"><span class="fa fa-youtube fa-lg"></span></a>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <span class="fa fa-phone lg text-primary"></span> 1-206-555-1234<br />
-                    <span class="fa fa-envelope lg text-primary"></span> campsites@nucamp.co
+                    <i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234<br />
+                    <i class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co
                 </div>
-            </div>
+           </div>
         </div>
     </footer>
 
@@ -109,6 +116,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
