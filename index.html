@@ -200,6 +200,14 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn bg-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn bg-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,6 +294,22 @@
         // $(function(){
         //     $('[data-toggle="tooltip"]').tooltip()
         // })
+
+        $(function(){
+            $(".carousel").carousel({interval : 2000});
+            $("#carouselPause").click(function(){
+                $("#carouselPause").removeClass("bg-danger").addClass("bg-secondary");
+                if($("#carouselPlay").hasClass("bg-secondary")){
+                    $("#carouselPlay").removeClass("bg-secondary").addClass("bg-danger");
+                }
+                $(".carousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $("#carouselPlay").removeClass("bg-danger").addClass("bg-secondary");
+                $("#carouselPause").removeClass("bg-secondary").addClass("bg-danger");
+                $(".carousel").carousel("cycle");
+            });
+        })
     </script>
 </body>
 
