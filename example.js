@@ -35,16 +35,21 @@ console.log(varVariable);
 
 // console.log(varVariable);  -> error
 
-let exNum = 123;
-let exStr = "123";
+// let exNum = 123;
+// let exStr = "123";
 
-console.log(exNum == exStr);
-console.log(exNum === exStr);
+// console.log(exNum == exStr);
+// console.log(exNum === exStr);
 
-exStr = parseInt(exStr);
+// exStr = parseInt(exStr);
 
-console.log(exNum === exStr);
+// console.log(exNum === exStr);
 
-console.log(undefined === null);
+// console.log(undefined === null);
 
+const myArray = [4443,2,32,-1,100];
+const numString = "4443"
+
+console.log(myArray[0].toString().length);
+// console.log(numString.length);
 
